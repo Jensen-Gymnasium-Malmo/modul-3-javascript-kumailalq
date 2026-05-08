@@ -5,16 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uppgift 4: Toggle Visibility</title>
   </head>
+
   <body>
-    <button onclick="toggleVisibility()">Toggle Visibility</button>
-    <!-- TODO: Skapa ett element som visas/döljs när knappen klickas på -->
+
+    <!-- Knapp -->
+    <button onclick="toggleVisibility()">
+      Toggle Visibility
+    </button>
+
+    <!-- Element som visas/döljs -->
+    <p id="toggleElement">
+      Hej! Nu kan du visa och dölja mig.
+    </p>
+
   </body>
 
   <script>
+
     function toggleVisibility() {
+
       var element = document.getElementById("toggleElement");
+
       element.style.display =
         element.style.display === "none" ? "block" : "none";
     }
+
   </script>
 </html>
